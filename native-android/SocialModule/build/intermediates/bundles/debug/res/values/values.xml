@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SocialModule</string>
+    <string name="install_qq_tips">您还未安装QQ</string>
+    <string name="install_wechat_tips">您还未安装微信</string>
+    <string name="install_weibo_tips">您还未安装微博</string>
+    <string name="qq_scheme">tencent1105724853</string>
+    <string name="sd_tips">请检查SD卡是否挂载</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_image_is_not_null">分享图片不能为空</string>
+</resources>
