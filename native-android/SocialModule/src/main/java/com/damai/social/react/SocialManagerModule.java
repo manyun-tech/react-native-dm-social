@@ -97,7 +97,9 @@ public class SocialManagerModule extends ReactContextBaseJavaModule implements L
 
             @Override
             public void onSuccess(String orderNo) {
-                callback.invoke(null, orderNo);
+                WritableMap event = Arguments.createMap();
+                event.putString("message", "支付成功");
+                callback.invoke(event, orderNo);
             }
 
             @Override
@@ -181,7 +183,9 @@ public class SocialManagerModule extends ReactContextBaseJavaModule implements L
             int code = intent.getIntExtra("code", 0);
             String msg = intent.getStringExtra("msg");
             if (code == 0) {  // 0:支付成功，-2：取消支付   支付失败
-                mCallback.invoke(null, "支付成功");
+                WritableMap event = Arguments.createMap();
+                event.putString("message", "支付成功");
+                mCallback.invoke(event, "支付成功");
             } else if (code == -2) {
                 WritableMap event = Arguments.createMap();
                 event.putString("message", "用户取消支付");
