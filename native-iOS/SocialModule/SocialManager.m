@@ -79,7 +79,7 @@ RCT_EXPORT_METHOD(payByWechat:(NSDictionary *) info whenCompleted:(RCTResponseSe
     }
     else {
       if (callback) {
-        callback(@[@{@"message": "支付成功"}, returnKey]);
+        callback(@[@{@"message": @"支付成功"}, returnKey]);
       }
     }
   }];
@@ -95,7 +95,7 @@ RCT_EXPORT_METHOD(payByAlipay:(NSDictionary *) info whenCompleted:(RCTResponseSe
     }
     else {
       if (callback) {
-        callback(@[@{@"message": "支付成功"}, resultDic]);
+        callback(@[@{@"message": @"支付成功"}, resultDic]);
       }
     }
   }];
