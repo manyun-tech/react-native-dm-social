@@ -111,6 +111,20 @@ export default {
     SocialManager.shareToQZone(message);
   },
 
+    /**
+     * 检查微信安装
+     */
+    checkWechatInstallation:(callback)=>{
+      SocialManager.checkWechatInstallation(callback);
+    },
+
+        /**
+     * 检查QQ安装
+     */
+    checkQQInstallation:(callback)=>{
+      SocialManager.checkQQInstallation(callback);
+    },
+
 
   // =============android 分享 ===========
   shareToQQAndroid: (params, callback) => {
